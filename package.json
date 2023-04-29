@@ -1,0 +1,24 @@
+{
+  "name": "projekt_zaverecny",
+  "version": "1.0.0",
+  "description": "Jedná se o závěrečný projekt kurzu \"Staň se kodérkou Jaro 2023\", Czechitas.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavlinaOliverova/PROJEKT-Zaverecny.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavlinaOliverova/PROJEKT-Zaverecny/issues"
+  },
+  "homepage": "https://github.com/PavlinaOliverova/PROJEKT-Zaverecny#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
