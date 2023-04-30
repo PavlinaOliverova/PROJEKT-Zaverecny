@@ -6,11 +6,25 @@ html {
     box-sizing: inherit;
   }
 
-$barva: red;
+$background-logo: #4d7a78;
+$text-logo:#f5f5c6;
 
-h1 {color: $barva}
+$spacer: 30px;
 
-footer{
-    background-color: $barva;
-    margin-left: 100px;
+body {font-family: 'Tenor Sans', sans-serif;
+  }
+
+.wrapper {
+  max-width: 640px;
+  padding: $spacer;
+  margin: 0 auto;
+
+  background-color: $background-logo;
+  color: $text-logo;
 }
+
+.logo{
+  fill: $text-logo;
+  border: 2px solid black;
+}
+

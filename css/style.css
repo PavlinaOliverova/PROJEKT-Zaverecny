@@ -6,11 +6,19 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
-  color: red;
+body {
+  font-family: "Tenor Sans", sans-serif;
 }
 
-footer {
-  background-color: red;
-  margin-left: 100px;
+.wrapper {
+  max-width: 640px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #4d7a78;
+  color: #f5f5c6;
+}
+
+.logo {
+  fill: #f5f5c6;
+  border: 2px solid black;
 }/*# sourceMappingURL=style.css.map */
