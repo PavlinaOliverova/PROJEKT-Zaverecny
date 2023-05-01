@@ -5,12 +5,17 @@ html {
   *, ::before, ::after {
     box-sizing: inherit;
   }
-
+/* Sass proměnné */
 $background-logo: #4d7a78;
 $text-logo:#f5f5c6;
+$dark: #56494C;
+$light: #E6BCCD;
+$contrast: #DB93B0;
 
 $spacer: 30px;
 
+
+/* Celý web */
 body {font-family: 'Tenor Sans', sans-serif;
   }
 
@@ -19,15 +24,45 @@ body {font-family: 'Tenor Sans', sans-serif;
   padding: $spacer;
   margin: 0 auto;
 
-  background-color: $background-logo;
-  color: $text-logo;
+  background-color: $light;
+  color: $dark;
 }
 
+
+/* Hlavička */
 .logo{
   fill: $text-logo;
   border: 2px solid black;
 }
 
+/* Menu */
+.menu{
+  background-color: $contrast;
+
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+
+}
+/* Main */
+
+
+
+/* Patička */
 .footer {
   background-color: $text-logo;
   color:$background-logo;

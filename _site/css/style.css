@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -6,6 +7,8 @@ html {
   box-sizing: inherit;
 }
 
+/* Sass proměnné */
+/* Celý web */
 body {
   font-family: "Tenor Sans", sans-serif;
 }
@@ -14,15 +17,37 @@ body {
   max-width: 640px;
   padding: 30px;
   margin: 0 auto;
-  background-color: #4d7a78;
-  color: #f5f5c6;
+  background-color: #E6BCCD;
+  color: #56494C;
 }
 
+/* Hlavička */
 .logo {
   fill: #f5f5c6;
   border: 2px solid black;
 }
 
+/* Menu */
+.menu {
+  background-color: #DB93B0;
+}
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu__item {
+  margin: 0;
+  padding: 0;
+}
+.menu__link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Main */
+/* Patička */
 .footer {
   background-color: #f5f5c6;
   color: #4d7a78;
