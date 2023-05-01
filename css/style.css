@@ -21,4 +21,9 @@ body {
 .logo {
   fill: #f5f5c6;
   border: 2px solid black;
+}
+
+.footer {
+  background-color: #f5f5c6;
+  color: #4d7a78;
 }/*# sourceMappingURL=style.css.map */
