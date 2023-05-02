@@ -8,9 +8,10 @@ html {
 /* Sass proměnné */
 $background-logo: #4d7a78;
 $text-logo:#f5f5c6;
-$dark: #56494C;
+$dark: #3D301C;
 $light: #E6BCCD;
 $contrast: #DB93B0;
+$white: #ffffff;
 
 $spacer: 20px;
 
@@ -34,31 +35,62 @@ h2{
 }
 
 .wrapper {
-  max-width: 640px;
-  padding: $spacer;
+ /*  min-width: 640px; */
+  /* padding: $spacer; */
   margin: 0 auto;
 
-  background-color: $light;
+  background-color: $white;
   color: $dark;
 }
 
 
-/* Banner */
-.logobox__logo{
-  fill: $text-logo;
-  border: 2px solid black;
+/* Hero */
+.hero{
+  width: 100%;
+  height: 100%;
+  background: url(/images/banner.jpg) no-repeat right center/cover;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+
+  
+  &__logo{
+    fill: $dark;
+    z-index: 2;
+    grid-column: 2;
+    justify-content: center;
+    object-fit: cover;
+  
+  }
+
+}
+
+.hero__contactbox{
+  grid-column: 3;
+  display:flex;
+  justify-content: space-evenly;
+
+  &__icon{
+    flex:1 1 auto;
+  }
+  &__contact{
+    flex: 1 1 auto;
+    margin: 0;
+  }
 }
 
 /* Tlačítko */
 .button{
-  background-color: $text-logo;
-  color: $dark;
+  background-color: $background-logo;
+  font-style: $fontbody;
   border: 2px solid $dark;
   border-radius: 5px;
+  font-size: 1em;
 
   &__link{
   text-decoration: none;
   text-align: center;
+  color: $light;
+  padding: $spacer;
   }
 
 }
@@ -78,7 +110,9 @@ h2{
 
   &__item {
     margin: 0;
-    padding: 0;
+    padding: $spacer;
+    display: block;
+
     flex: 1 1 auto;
     text-align: center;
   
@@ -97,6 +131,14 @@ h2{
 }
 /* Main */
 
+.main{
+  padding: $spacer*3;
+}
+
+.box__photo-main {
+  width: 50%;
+  
+}
 
 
 /* Patička */

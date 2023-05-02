@@ -24,29 +24,55 @@ h2 {
 }
 
 .wrapper {
-  max-width: 640px;
-  padding: 20px;
+  /*  min-width: 640px; */
+  /* padding: $spacer; */
   margin: 0 auto;
-  background-color: #E6BCCD;
-  color: #56494C;
+  background-color: #ffffff;
+  color: #3D301C;
 }
 
-/* Banner */
-.logobox__logo {
-  fill: #f5f5c6;
-  border: 2px solid black;
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100%;
+  background: url(/images/banner.jpg) no-repeat right center/cover;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+.hero__logo {
+  fill: #3D301C;
+  z-index: 2;
+  grid-column: 2;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.hero__contactbox {
+  grid-column: 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero__contactbox__icon {
+  flex: 1 1 auto;
+}
+.hero__contactbox__contact {
+  flex: 1 1 auto;
+  margin: 0;
 }
 
 /* Tlačítko */
 .button {
-  background-color: #f5f5c6;
-  color: #56494C;
-  border: 2px solid #56494C;
+  background-color: #4d7a78;
+  font-style: "Maven Pro", sans-serif;
+  border: 2px solid #3D301C;
   border-radius: 5px;
+  font-size: 1em;
 }
 .button__link {
   text-decoration: none;
   text-align: center;
+  color: #E6BCCD;
+  padding: 20px;
 }
 
 /* Menu */
@@ -61,7 +87,8 @@ h2 {
 }
 .menu__item {
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  display: block;
   flex: 1 1 auto;
   text-align: center;
 }
@@ -70,12 +97,20 @@ h2 {
 }
 .menu__link {
   text-decoration: none;
-  color: #56494C;
+  color: #3D301C;
   text-transform: uppercase;
   font-family: "Kalam", cursive;
 }
 
 /* Main */
+.main {
+  padding: 60px;
+}
+
+.box__photo-main {
+  width: 50%;
+}
+
 /* Patička */
 .footer {
   background-color: #f5f5c6;
