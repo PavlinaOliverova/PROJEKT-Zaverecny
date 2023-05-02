@@ -16,7 +16,10 @@ $spacer: 30px;
 
 
 /* Celý web */
-body {font-family: 'Tenor Sans', sans-serif;
+body {
+  font-family: 'Tenor Sans', sans-serif;
+  margin: 0;
+  font-size: 16px;
   }
 
 .wrapper {
@@ -29,15 +32,30 @@ body {font-family: 'Tenor Sans', sans-serif;
 }
 
 
-/* Hlavička */
+/* Banner */
 .logo{
   fill: $text-logo;
   border: 2px solid black;
 }
 
+/* Tlačítko */
+.button{
+  background-color: $text-logo;
+  color: $dark;
+  border: 2px solid $dark;
+  border-radius: 5px;
+
+  &__link{
+  text-decoration: none;
+  text-align: center;
+  }
+
+}
+
 /* Menu */
 .menu{
   background-color: $contrast;
+  
 
 
   &__list {
@@ -50,11 +68,16 @@ body {font-family: 'Tenor Sans', sans-serif;
   &__item {
     margin: 0;
     padding: 0;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  &__item:hover{
+    text-decoration-line: underline;
   }
 
   &__link {
-    display: block;
     text-decoration: none;
+    color: $dark;
   }
 
 }
