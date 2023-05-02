@@ -12,15 +12,26 @@ $dark: #56494C;
 $light: #E6BCCD;
 $contrast: #DB93B0;
 
-$spacer: 30px;
+$spacer: 20px;
+
+$fontmenu:'Kalam', cursive;
+$fontbody:'Maven Pro', sans-serif;
 
 
 /* Celý web */
 body {
-  font-family: 'Tenor Sans', sans-serif;
+  font-family: $fontbody;
   margin: 0;
   font-size: 16px;
   }
+
+p {
+  margin: $spacer 0;
+}
+
+h2{
+  margin: $spacer*2 0;
+}
 
 .wrapper {
   max-width: 640px;
@@ -33,7 +44,7 @@ body {
 
 
 /* Banner */
-.logo{
+.logobox__logo{
   fill: $text-logo;
   border: 2px solid black;
 }
@@ -70,14 +81,17 @@ body {
     padding: 0;
     flex: 1 1 auto;
     text-align: center;
-  }
-  &__item:hover{
+  
+    &:hover{
     text-decoration-line: underline;
+    }
   }
 
   &__link {
     text-decoration: none;
     color: $dark;
+    text-transform: uppercase;
+    font-family: $fontmenu;
   }
 
 }
@@ -89,5 +103,6 @@ body {
 .footer {
   background-color: $text-logo;
   color:$background-logo;
+  text-align: center;
 }
 

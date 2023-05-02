@@ -10,21 +10,29 @@ html {
 /* Sass proměnné */
 /* Celý web */
 body {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   margin: 0;
   font-size: 16px;
 }
 
+p {
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 40px 0;
+}
+
 .wrapper {
   max-width: 640px;
-  padding: 30px;
+  padding: 20px;
   margin: 0 auto;
   background-color: #E6BCCD;
   color: #56494C;
 }
 
 /* Banner */
-.logo {
+.logobox__logo {
   fill: #f5f5c6;
   border: 2px solid black;
 }
@@ -63,6 +71,8 @@ body {
 .menu__link {
   text-decoration: none;
   color: #56494C;
+  text-transform: uppercase;
+  font-family: "Kalam", cursive;
 }
 
 /* Main */
@@ -70,4 +80,5 @@ body {
 .footer {
   background-color: #f5f5c6;
   color: #4d7a78;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
