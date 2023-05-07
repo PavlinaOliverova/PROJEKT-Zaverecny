@@ -163,16 +163,16 @@ p {
   }
 }
 /* Main index*/
-h1 {
+.main__title {
   text-align: center;
   margin: 40px;
 }
 @media screen and (min-width: 640px) {
-  h1 {
+  .main__title {
     margin: 80px;
   }
 }
-h1::after {
+.main__title::after {
   content: "";
   display: block;
   width: 100px;
@@ -253,6 +253,11 @@ h1::after {
     align-self: center;
   }
 }
+/* Main pricing */
+.pricingbox {
+  display: grid;
+}
+
 /* Patička */
 .footer {
   background-color: #B1C2C5;
