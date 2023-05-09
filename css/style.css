@@ -30,8 +30,17 @@ h2 {
   font-size: 24px;
 }
 
+h3 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
 p {
   margin: 0;
+}
+
+span {
+  font-weight: bold;
 }
 
 .wrapper {
@@ -53,7 +62,10 @@ p {
   height: 50px;
   font-size: 20px;
   margin: 20px;
-  border: 0;
+  border: 1px solid #3D301C;
+}
+.button:hover {
+  background-color: #c3451f;
 }
 .button__link {
   text-decoration: none;
@@ -252,10 +264,47 @@ p {
     grid-row: 1;
     align-self: center;
   }
+  .detailbox .button {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 /* Main pricing */
-.pricingbox {
+.pricingwrapper {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+  grid-auto-rows: 400px;
+  justify-items: center;
+  gap: 40px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.pricingbox {
+  text-align: center;
+  justify-items: center;
+  background-image: url(/images/karta_pozadi.png);
+  background-size: cover;
+  background-color: #D7C075;
+  color: #3D301C;
+  border: 1px solid #3D301C;
+  border-radius: 5px;
+  padding: 20px;
+}
+.pricingbox:hover {
+  transform: scale(1.1);
+}
+.pricingbox__h2 {
+  color: #3D301C;
+}
+.pricingbox__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pricingbox .button {
+  margin: 0 auto;
 }
 
 /* Patička */
