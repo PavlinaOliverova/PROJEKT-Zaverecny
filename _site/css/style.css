@@ -306,6 +306,9 @@ span {
 .pricingbox .button {
   margin: 0 auto;
 }
+.pricingbox--var {
+  background-color: #B1C2C5;
+}
 
 /* Main Contact */
 .contact {

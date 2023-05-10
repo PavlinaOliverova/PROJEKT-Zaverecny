@@ -353,6 +353,9 @@ span{
   & .button{
     margin: 0 auto;
   }
+  &--var{
+    background-color: $footer;
+  }
 
 }
   
@@ -371,9 +374,6 @@ span{
   margin: $spacer 0;
   }
 }
-
-
-
 
 @media screen and (max-width: 639px){
   .contactbox__map--big{
