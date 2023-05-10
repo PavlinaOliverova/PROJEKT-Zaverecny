@@ -357,14 +357,42 @@ span{
 }
   
 /* Main Contact */
+.contact{
+  max-width: 1040px;
+  margin: 0 auto;
+}
 .contactbox{
+  &__content{
   display: flex;
   gap: $spacer;
-  
+  margin: $spacer 0;
+  }
+  &__map{
+  margin: $spacer 0;
+  }
 }
 
 
 
+
+@media screen and (max-width: 639px){
+  .contactbox__map--big{
+    display:none;
+  }
+}
+@media screen and (min-width: 640px){
+  .contactbox__map--small{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .contactwrapper{
+    display: flex;
+    gap:$spacer;
+  }
+
+}
 /* Footer */
 
 .footer {

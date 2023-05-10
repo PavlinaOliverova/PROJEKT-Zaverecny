@@ -308,11 +308,36 @@ span {
 }
 
 /* Main Contact */
-.contactbox {
-  display: flex;
-  gap: 20px;
+.contact {
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
+.contactbox__content {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+.contactbox__map {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 639px) {
+  .contactbox__map--big {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) {
+  .contactbox__map--small {
+    display: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contactwrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
 /* Footer */
 .footer {
   background-color: #B1C2C5;
