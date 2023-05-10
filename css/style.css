@@ -307,7 +307,13 @@ span {
   margin: 0 auto;
 }
 
-/* Patička */
+/* Main Contact */
+.contactbox {
+  display: flex;
+  gap: 20px;
+}
+
+/* Footer */
 .footer {
   background-color: #B1C2C5;
   color: #F7F8F9;

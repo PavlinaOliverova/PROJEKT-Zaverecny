@@ -356,9 +356,17 @@ span{
 
 }
   
+/* Main Contact */
+.contactbox{
+  display: flex;
+  gap: $spacer;
+  
+}
 
 
-/* Patička */
+
+/* Footer */
+
 .footer {
   background-color: $footer;
   color:$light;
