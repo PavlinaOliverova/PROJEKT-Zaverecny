@@ -57,11 +57,14 @@ span{
  /*  max-width: 1040px; */
   /* padding: $spacer; */
   margin: 0 auto;
-  padding-top: $spacer;
+  /* padding-top: $spacer; */
 
   background-color: $light;
   color: $dark;
+  background-image: url(/images/karta_pozadi.png);
+  background-size: cover;
 }
+
 
 
 /* Tlačítko */
@@ -74,10 +77,11 @@ span{
   height: 50px;
   font-size: 20px;
   margin: $spacer;
-  border: 1px solid $dark;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid $light;
   &:hover{
-    background-color:#c3451f;
-  }
+    background-color:#c3451f;}
+  
 
   &__link{
   text-decoration: none;
@@ -124,6 +128,9 @@ span{
     padding: $spacer;
     display: block;
     text-align: center;
+    &--active{
+      text-decoration-line: underline;
+    }
     
   
     &:hover{
@@ -165,6 +172,10 @@ span{
   }
   .menu__list{
     display: flex !important;
+  }
+  .menu__item--active{
+    background-color: #D4E2DA;
+    border-radius: 25% 25% 0 0;
   }
  
 }
@@ -243,13 +254,16 @@ span{
   &__photo-profil{
     grid-column: 2;
     grid-row: 1;
+    background-image: url(/images/karta_pozadi.png);
+    background-size: cover;
+    border-radius: 5px;
+
   }
 
   &__content{
     grid-column: 2;
     grid-row: 2;
     text-align: center;
-
   }
 }
 
@@ -284,6 +298,7 @@ span{
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   &__content{
     grid-column: 2;
@@ -333,8 +348,8 @@ span{
   background-size: cover;
   background-color: $light-contrast;
   color: $dark;
-  border: 1px solid $dark;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: $spacer;
   &:hover{
     transform: scale(1.1);
