@@ -50,8 +50,9 @@ span {
   /* padding-top: $spacer; */
   background-color: #F7F8F9;
   color: #3D301C;
-  background-image: url(/images/karta_pozadi.png);
+  background-image: url(/images/watercolor.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Tlačítko */
@@ -214,8 +215,6 @@ span {
 .box__photo-profil {
   grid-column: 2;
   grid-row: 1;
-  background-image: url(/images/karta_pozadi.png);
-  background-size: cover;
   border-radius: 5px;
 }
 .box__content {
