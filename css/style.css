@@ -23,6 +23,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   margin: 20px 0;
+  text-align: center;
 }
 
 h2 {
@@ -80,7 +81,7 @@ span {
 
 /* Menu */
 .menu {
-  background-color: #F7F8F9;
+  /* background-color: $light; */
   font-family: "Kalam", cursive;
   text-transform: uppercase;
   display: flex;
