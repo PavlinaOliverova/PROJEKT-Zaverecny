@@ -51,7 +51,7 @@ span {
   /* padding-top: $spacer; */
   background-color: #F7F8F9;
   color: #3D301C;
-  background-image: url(/images/watercolor.jpg);
+  background-image: url(/images/background.webp);
   background-size: cover;
   background-attachment: fixed;
 }
