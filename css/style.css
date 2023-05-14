@@ -1,59 +1,24 @@
 @charset "UTF-8";
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-/* Sass proměnné */
-/* Celý web */
-body {
-  font-family: "Josefin Sans", sans-serif;
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-h1,
-h2 {
-  font-family: "Kalam", cursive;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 20px 0;
+/* Sass proměnné barvy*/ /* Sass proměnné mezery*/ /* Sass proměnné fonty*/
+/* h1 */
+.title {
   text-align: center;
+  margin: 40px;
 }
-
-h2 {
-  color: #C27159;
-  font-size: 24px;
+@media screen and (min-width: 640px) {
+  .title {
+    margin: 80px;
+  }
 }
-
-h3 {
-  font-size: 22px;
-  margin: 20px 0;
-}
-
-p {
-  margin: 0;
-}
-
-span {
-  font-weight: bold;
-}
-
-.wrapper {
-  /*  max-width: 1040px; */
-  /* padding: $spacer; */
-  margin: 0 auto;
-  /* padding-top: $spacer; */
-  background-color: #F7F8F9;
-  color: #3D301C;
-  background-image: url(/images/background.webp);
-  background-size: cover;
-  background-attachment: fixed;
+.title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #C27159;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Tlačítko */
@@ -142,10 +107,6 @@ span {
 }
 
 @media screen and (min-width: 640px) {
-  .menu {
-    /* display: flex; */
-    /* justify-content: space-between; */
-  }
   .menu__toggler {
     display: none;
   }
@@ -191,27 +152,71 @@ span {
     height: 450px;
   }
 }
-/* Main index*/
-.main__title {
+/* Footer */
+.footer {
+  background-color: #B1C2C5;
+  color: #F7F8F9;
   text-align: center;
-  margin: 40px;
-}
-@media screen and (min-width: 640px) {
-  .main__title {
-    margin: 80px;
-  }
-}
-.main__title::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 2px;
-  background-color: #C27159;
-  margin-top: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 20px;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+/* Celý web */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #C27159;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.wrapper {
+  /*  max-width: 1040px; */
+  /* padding: $spacer; */
+  margin: 0 auto;
+  /* padding-top: $spacer; */
+  background-color: #F7F8F9;
+  color: #3D301C;
+  background-image: url(/images/background.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Main index O mně*/
 .box {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 500px) 1fr;
@@ -359,11 +364,4 @@ span {
     display: flex;
     gap: 20px;
   }
-}
-/* Footer */
-.footer {
-  background-color: #B1C2C5;
-  color: #F7F8F9;
-  text-align: center;
-  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

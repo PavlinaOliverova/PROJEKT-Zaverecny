@@ -1,0 +1,11 @@
+@use 'colors';
+@use 'spacer';
+
+/* Footer */
+
+.footer {
+    background-color: colors.$footer;
+    color: colors.$light;
+    text-align: center;
+    padding: spacer.$spacer;
+  }
