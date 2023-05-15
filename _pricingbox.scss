@@ -1,0 +1,46 @@
+@use 'colors';
+@use 'spacer';
+@use 'typography';
+
+// Komponenta main section pricing, cenik.html
+
+.pricingwrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+    grid-auto-rows: 400px;
+    justify-items: center;
+    gap: spacer.$spacer*2;
+  }
+  
+.pricingbox{
+    text-align: center;
+    justify-items: center;
+    background-image: url(/images/karta_pozadi.png);
+    background-size: cover;
+    background-color: colors.$light-contrast;
+    color: colors.$dark;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: spacer.$spacer;
+&:hover{
+    transform: scale(1.1);
+}
+
+&__h2{
+    color: #3D301C;
+}
+
+&__time{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:spacer.$spacer;
+}
+& .button{
+    margin: 0 auto;
+}
+&--var{
+    background-color: colors.$footer;
+}
+  
+}

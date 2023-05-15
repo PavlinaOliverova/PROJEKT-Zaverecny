@@ -1,0 +1,29 @@
+@use 'colors';
+@use 'spacer';
+@use 'typography';
+
+// Komponenta main section about, index.html
+.aboutbox{
+    display:grid;
+    grid-template-columns: 1fr minmax(200px, 500px) 1fr;
+    justify-items: center;
+    gap: spacer.$spacer;
+  
+    &__photo-profil{
+      grid-column: 2;
+      grid-row: 1;
+      border-radius: 5px;
+  
+    }
+  
+    &__content{
+      grid-column: 2;
+      grid-row: 2;
+      text-align: center;
+    }
+  }
+  
+  .button{
+    grid-column: 2;
+    grid-row: 3;
+  }

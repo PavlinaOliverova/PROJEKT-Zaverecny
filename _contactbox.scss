@@ -1,0 +1,37 @@
+@use 'colors';
+@use 'spacer';
+@use 'typography';
+
+// Komponenta main section contact, kontakt.html
+
+.contactbox{
+    &__content{
+    display: flex;
+    gap: spacer.$spacer;
+    margin: spacer.$spacer 0;
+    }
+    &__map{
+    margin: spacer.$spacer 0;
+    }
+    &__contactwrapper{
+      margin: 0 spacer.$spacer*4;
+    }
+  }
+  
+  @media screen and (max-width: 639px){
+    .contactbox__map--big{
+      display:none;
+    }
+  }
+  @media screen and (min-width: 640px){
+    .contactbox__map--small{
+      display:none;
+    }
+  }
+  
+  @media screen and (min-width: 1100px){
+    .contactbox__contactwrapper{
+      display: flex;
+      gap:spacer.$spacer*3;
+    }
+  }

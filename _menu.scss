@@ -2,12 +2,13 @@
 @use 'spacer';
 @use 'typography';
 
-/* Menu */
+// Menu
 .menu{
     font-family: typography.$fonthandwrite;
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
+    
   
     &__toggler {
       padding: spacer.$spacer;

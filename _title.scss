@@ -2,13 +2,15 @@
 @use 'spacer';
 @use 'typography';
 
-/* h1 */
+// Nadpis h1
 .title{
     text-align: center;
     margin: spacer.$spacer * 2;
+    
     @media screen and (min-width: 640px){
       margin: spacer.$spacer * 4;
     }
+    
     &::after{
       content: "";
       display: block;

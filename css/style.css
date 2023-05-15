@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* Sass proměnné barvy*/ /* Sass proměnné mezery*/ /* Sass proměnné fonty*/
-/* h1 */
 .title {
   text-align: center;
   margin: 40px;
@@ -21,7 +19,6 @@
   margin-left: auto;
 }
 
-/* Tlačítko */
 .button {
   background-color: #C27159;
   font-family: "Josefin Sans", sans-serif;
@@ -44,7 +41,6 @@
   padding: 10px;
 }
 
-/* Menu */
 .menu {
   font-family: "Kalam", cursive;
   text-transform: uppercase;
@@ -127,7 +123,6 @@
     gap: 40px;
   }
 }
-/* Hero */
 .hero {
   width: 100%;
   height: 250px;
@@ -152,83 +147,18 @@
     height: 450px;
   }
 }
-/* Footer */
-.footer {
-  background-color: #B1C2C5;
-  color: #F7F8F9;
-  text-align: center;
-  padding: 20px;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-/* Celý web */
-body {
-  font-family: "Josefin Sans", sans-serif;
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-h1,
-h2 {
-  font-family: "Kalam", cursive;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 20px 0;
-  text-align: center;
-}
-
-h2 {
-  color: #C27159;
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 22px;
-  margin: 20px 0;
-}
-
-p {
-  margin: 0;
-}
-
-span {
-  font-weight: bold;
-}
-
-.wrapper {
-  /*  max-width: 1040px; */
-  /* padding: $spacer; */
-  margin: 0 auto;
-  /* padding-top: $spacer; */
-  background-color: #F7F8F9;
-  color: #3D301C;
-  background-image: url(/images/background.webp);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* Main index O mně*/
-.box {
+.aboutbox {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 500px) 1fr;
   justify-items: center;
   gap: 20px;
 }
-.box__photo-profil {
+.aboutbox__photo-profil {
   grid-column: 2;
   grid-row: 1;
   border-radius: 5px;
 }
-.box__content {
+.aboutbox__content {
   grid-column: 2;
   grid-row: 2;
   text-align: center;
@@ -237,16 +167,6 @@ span {
 .button {
   grid-column: 2;
   grid-row: 3;
-}
-
-.main {
-  margin: 80px;
-}
-
-/* Main detail */
-.detail {
-  max-width: 1040px;
-  margin: 0 auto;
 }
 
 .detailbox {
@@ -293,15 +213,12 @@ span {
     grid-row: 2;
   }
 }
-/* Main pricing */
 .pricingwrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
   grid-auto-rows: 400px;
   justify-items: center;
   gap: 40px;
-  max-width: 1040px;
-  margin: 0 auto;
 }
 
 .pricingbox {
@@ -334,12 +251,6 @@ span {
   background-color: #B1C2C5;
 }
 
-/* Main Contact */
-.contact {
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
 .contactbox__content {
   display: flex;
   gap: 20px;
@@ -347,6 +258,9 @@ span {
 }
 .contactbox__map {
   margin: 20px 0;
+}
+.contactbox__contactwrapper {
+  margin: 0 80px;
 }
 
 @media screen and (max-width: 639px) {
@@ -360,8 +274,72 @@ span {
   }
 }
 @media screen and (min-width: 1100px) {
-  .contactwrapper {
+  .contactbox__contactwrapper {
     display: flex;
-    gap: 20px;
+    gap: 60px;
   }
+}
+.footer {
+  background-color: #B1C2C5;
+  color: #F7F8F9;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Celý web */
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #C27159;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.wrapper {
+  background-color: #F7F8F9;
+  color: #3D301C;
+  background-image: url(/images/background.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  max-width: 1040px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
