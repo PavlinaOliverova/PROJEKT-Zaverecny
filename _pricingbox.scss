@@ -2,7 +2,9 @@
 @use 'spacer';
 @use 'typography';
 
-// Komponenta main section pricing, cenik.html
+@use 'base';
+
+// Komponenta main section pricing, cenik.html + layout
 
 .pricingwrapper{
     display:grid;

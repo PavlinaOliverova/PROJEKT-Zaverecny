@@ -2,7 +2,9 @@
 @use 'spacer';
 @use 'typography';
 
-// Komponenta main section contact, kontakt.html
+@use 'base';
+
+// Komponenta main section contact, kontakt.html + layout
 
 .contactbox{
     &__content{

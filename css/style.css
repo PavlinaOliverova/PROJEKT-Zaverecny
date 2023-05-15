@@ -1,4 +1,59 @@
-@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #C27159;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.wrapper {
+  background-color: #F7F8F9;
+  color: #3D301C;
+  background-image: url(/images/background.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
 .title {
   text-align: center;
   margin: 40px;
@@ -285,61 +340,4 @@
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-}
-
-/* Celý web */
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: "Josefin Sans", sans-serif;
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-h1,
-h2 {
-  font-family: "Kalam", cursive;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 20px 0;
-  text-align: center;
-}
-
-h2 {
-  color: #C27159;
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 22px;
-  margin: 20px 0;
-}
-
-p {
-  margin: 0;
-}
-
-span {
-  font-weight: bold;
-}
-
-.wrapper {
-  background-color: #F7F8F9;
-  color: #3D301C;
-  background-image: url(/images/background.webp);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.main {
-  max-width: 1040px;
-  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

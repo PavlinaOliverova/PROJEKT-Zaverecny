@@ -2,6 +2,8 @@
 @use 'spacer';
 @use 'typography';
 
+@use 'base';
+
 // Menu
 .menu{
     font-family: typography.$fonthandwrite;

@@ -2,7 +2,9 @@
 @use 'spacer';
 @use 'typography';
 
-// Hero
+@use 'base';
+
+// Hero + layout
 
 .hero{
     width: 100%;

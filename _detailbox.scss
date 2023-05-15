@@ -2,7 +2,9 @@
 @use 'spacer';
 @use 'typography';
 
-// Komponenta main section detail, co-vas-ceka.html
+@use 'base';
+
+// Komponenta main section detail, co-vas-ceka.html + layout
 
 .detailbox{
     display:grid;

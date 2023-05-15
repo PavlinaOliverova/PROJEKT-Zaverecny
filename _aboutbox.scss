@@ -2,7 +2,9 @@
 @use 'spacer';
 @use 'typography';
 
-// Komponenta main section about, index.html
+@use 'base';
+
+// Komponenta main section about, index.html + layout
 .aboutbox{
     display:grid;
     grid-template-columns: 1fr minmax(200px, 500px) 1fr;

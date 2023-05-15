@@ -1,0 +1,59 @@
+@use 'colors';
+@use 'spacer';
+@use 'typography';
+
+// Pro celý web
+html {
+    box-sizing: border-box;
+  }
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+
+
+body {
+  font-family: typography.$fontbody;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  }
+
+h1,  
+h2{
+  font-family: typography.$fonthandwrite;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: spacer.$spacer 0;
+  text-align: center;
+}
+
+h2{
+  color: colors.$contrast;
+  font-size: 24px;
+}
+h3{
+  font-size: 22px;
+  margin: spacer.$spacer 0;
+}
+
+p{
+  margin: 0;
+}
+
+span{
+  font-weight: bold;
+}
+
+.wrapper {
+  background-color: colors.$light;
+  color: colors.$dark;
+  background-image: url(/images/background.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main{
+  max-width: 1040px;
+  margin: 0 auto;
+}
