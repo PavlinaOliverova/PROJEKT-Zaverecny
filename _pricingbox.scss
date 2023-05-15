@@ -7,11 +7,13 @@
 // Komponenta main section pricing, cenik.html + layout
 
 .pricingwrapper{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
     grid-auto-rows: 400px;
     justify-items: center;
     gap: spacer.$spacer*2;
+    justify-content: center;
+    margin: spacer.$spacer;
   }
   
 .pricingbox{

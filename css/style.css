@@ -274,6 +274,8 @@ span {
   grid-auto-rows: 400px;
   justify-items: center;
   gap: 40px;
+  justify-content: center;
+  margin: 20px;
 }
 
 .pricingbox {
