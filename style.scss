@@ -6,21 +6,21 @@
 @use 'button';
 @use 'menu';
 @use 'hero';
-
+@use 'aboutbox';
+@use 'detailbox';
+@use 'pricingbox';
+@use 'contactbox';
 @use 'footer';
 
-
+/* Celý web */
 html {
     box-sizing: border-box;
   }
-  
   *, ::before, ::after {
     box-sizing: inherit;
   }
 
 
-
-/* Celý web */
 body {
   font-family: typography.$fontbody;
   margin: 0;
@@ -56,11 +56,6 @@ span{
 }
 
 .wrapper {
- /*  max-width: 1040px; */
-  /* padding: $spacer; */
-  margin: 0 auto;
-  /* padding-top: $spacer; */
-
   background-color: colors.$light;
   color: colors.$dark;
   background-image: url(/images/background.webp);
@@ -69,169 +64,7 @@ span{
 
 }
 
-
-
-
-/* Main index O mně*/
-
-
-.box{
-  display:grid;
-  grid-template-columns: 1fr minmax(200px, 500px) 1fr;
-  justify-items: center;
-  gap: spacer.$spacer;
-
-  &__photo-profil{
-    grid-column: 2;
-    grid-row: 1;
-    border-radius: 5px;
-
-  }
-
-  &__content{
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-  }
-}
-
-
-.button{
-  grid-column: 2;
-  grid-row: 3;
-}
-
 .main{
-  margin: spacer.$spacer*4;
-}
-
-/* Main detail */
-.detail{
   max-width: 1040px;
   margin: 0 auto;
-}
-.detailbox{
-  display:grid;
-  grid-template-columns: 1fr minmax(200px, 500px) 1fr;
-  justify-items: center;
-  gap: spacer.$spacer;
-  margin-bottom: spacer.$spacer*2;
-  &__photo{
-    width: 100%;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  &__photo-detail{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-  &__content{
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1100px){
-  .detailbox{
-    grid-template-columns: minmax(200px, 500px) minmax(200px, 500px);
-    gap:spacer.$spacer*3;
-    &__photo{
-      grid-column: 1;
-      grid-row: 1;
-    }
-    &__content{
-      grid-column: 2;
-      grid-row: 1;
-      align-self: center;
-    }
-    & .button{
-      grid-column: 2;
-      grid-row: 2;
-    }
-    
-  }
-
-}
-
-/* Main pricing */
-.pricingwrapper{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
-  grid-auto-rows: 400px;
-  justify-items: center;
-  gap: spacer.$spacer*2;
-  max-width: 1040px;
-  margin: 0 auto;
-  
-}
-
-.pricingbox{
-  text-align: center;
-  justify-items: center;
-  background-image: url(/images/karta_pozadi.png);
-  background-size: cover;
-  background-color: colors.$light-contrast;
-  color: colors.$dark;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  padding: spacer.$spacer;
-  &:hover{
-    transform: scale(1.1);
-  }
-  
-  &__h2{
-    color: #3D301C;
-  }
-
-  &__time{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:spacer.$spacer;
-  }
-  & .button{
-    margin: 0 auto;
-  }
-  &--var{
-    background-color: colors.$footer;
-  }
-
-}
-  
-/* Main Contact */
-.contact{
-  max-width: 1040px;
-  margin: 0 auto;
-}
-.contactbox{
-  &__content{
-  display: flex;
-  gap: spacer.$spacer;
-  margin: spacer.$spacer 0;
-  }
-  &__map{
-  margin: spacer.$spacer 0;
-  }
-}
-
-@media screen and (max-width: 639px){
-  .contactbox__map--big{
-    display:none;
-  }
-}
-@media screen and (min-width: 640px){
-  .contactbox__map--small{
-    display:none;
-  }
-}
-
-@media screen and (min-width: 1100px){
-  .contactwrapper{
-    display: flex;
-    gap:spacer.$spacer;
-  }
 }
