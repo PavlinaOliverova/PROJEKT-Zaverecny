@@ -1,9 +1,12 @@
+//Variables
 @use 'colors';
 @use 'spacer';
 @use 'typography';
 
+//Base
 @use 'base';
 
+//Components + Layouts
 @use 'title';
 @use 'button';
 @use 'menu';
