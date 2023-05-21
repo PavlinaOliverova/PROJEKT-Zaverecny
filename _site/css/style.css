@@ -211,6 +211,7 @@ span {
 .aboutbox__photo-profil {
   grid-column: 2;
   grid-row: 1;
+  max-width: 350px;
   border-radius: 5px;
 }
 .aboutbox__content {
