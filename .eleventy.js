@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
 	// Zkopírovat css/ to _site/css/
 	eleventyConfig.addPassthroughCopy("css");
 
-  eleventyConfig.addPassthroughCopy({"favicon":"/"});
+  eleventyConfig.addPassthroughCopy("favicon");
 
   return {
     // možné formáty šablon
